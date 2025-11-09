@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   jumpToNextPage() {
     Future.delayed(Duration(seconds: 3), () {
-      Get.offAllNamed('/login_screen');
+      Get.offAllNamed("/login_screen");
     });
   }
 

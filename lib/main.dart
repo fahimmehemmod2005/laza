@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:laza/routes/app_pages.dart';
+import 'package:laza/routes/routes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) => GetMaterialApp(
-        debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: true,
         title: 'Laza Ecommerce',
-        getPages: AppPages.routes,
+        getPages: pages,
         initialRoute: Routes.splashScreen,
       ),
     );
